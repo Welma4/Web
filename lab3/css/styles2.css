@@ -1,0 +1,77 @@
+.header__escape {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 26px;
+  color: #2e2e2e;
+}
+
+.header__item {
+  font-family: "Oxygen";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: #2e2e2e;
+}
+
+.header__title {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 51px;
+  letter-spacing: 2px;
+  color: #2e2e2e;
+}
+
+.header__subtitle {
+  font-family: "Oxygen";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  color: rgba(46, 46, 46, 0.63);
+}
+
+.main__image {
+  width: 1440px;
+  height: 534px;
+}
+
+.main__text {
+  font-family: "Oxygen";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  color: #101315;
+}
+
+.footer {
+  background: url(images/footer.png);
+  background-color: rgba(35, 47, 56, 0.6);
+}
+
+.footer__item {
+  font-family: "Oxygen";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__escape {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 26px;
+  color: #ffffff;
+}

@@ -1,0 +1,199 @@
+.header {
+  background: url(../images/header.png);
+  background-color: #ffffff;
+  width: 1440px;
+  height: 500px;
+}
+.header__button {
+  font-family: "Oxygen";
+  font-weight: 400;
+  font-size: 13px;
+  background: #dd783f;
+  height: 44px;
+  font-family: "Oxygen";
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.header__escape {
+  font-family: "Lora";
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+.header__item {
+  font-family: "Oxygen";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.header__top-block-title {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 51px;
+  color: #ffffff;
+}
+.header__top-block-undertitle {
+  font-family: "Oxygen";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.63);
+}
+
+.navigation-menu {
+  background: #ffffff;
+}
+
+.navigation-menu__item {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #768088;
+}
+
+.main{
+    background: #F7F7F7;
+}
+
+.featured-posts__header {
+  font-family: "Oxygen";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: 2px;
+  color: #2e2e2e;
+}
+
+.featured-posts__post1 {
+  background: url(../images/TheRoadAhead.png) no-repeat;
+  width: 460px;
+  height: 280px;
+}
+
+.featured-posts__header1 {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.featured-posts__subtitle1 {
+  font-family: "Oxygen";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.featured-posts__name-date1 {
+  font-family: "Oxygen";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 35px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.featured-posts__post2 {
+  background: url(../images/FromTopDown.png) no-repeat;
+  width: 460px;
+  height: 280px;
+}
+
+.featured-posts__adventure2 {
+  background: #dd783f;
+  font-family: "Oxygen";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 13px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.most-recent__title {
+  font-family: "Oxygen";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: 2px;
+  color: #2e2e2e;
+}
+
+.most-recent__post1 {
+  background: #ffffff;
+}
+
+.most-recent__header {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #101315;
+}
+
+.most-recent__subtitle {
+  font-family: "Oxygen";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19px;
+  color: #7a7a7a;
+}
+
+.most-recent__name-date {
+  font-family: "Oxygen";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 35px;
+  color: #999999;
+}
+
+.most-recent__pics {
+  width: 296px;
+  height: 150px;
+}
+
+.footer {
+  background: url(images/footer.png);
+  background-color: rgba(35, 47, 56, 0.6);
+}
+
+.footer__item {
+  font-family: "Oxygen";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.fp-back{
+background-color: #F7F7F7;
+}
