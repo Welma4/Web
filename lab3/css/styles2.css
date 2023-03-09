@@ -1,39 +1,32 @@
-.header__escape {
+/* .header__escape {
   font-family: "Lora";
   font-style: normal;
   font-weight: 400;
   font-size: 26px;
   line-height: 26px;
   color: #2e2e2e;
+} */
+
+.header__items{
+  list-style-type: none;
 }
 
-.header__item {
-  font-family: "Oxygen";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 20px;
+.header__items_link {
+  font: normal 400 12px/20px "Oxygen";
   letter-spacing: 0.6px;
   text-transform: uppercase;
   color: #2e2e2e;
+  text-decoration: none;
 }
 
-.header__title {
-  font-family: "Lora";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 50px;
-  line-height: 51px;
+.main__title {
+  font: normal 400 50px/51px "Lora";
   letter-spacing: 2px;
   color: #2e2e2e;
 }
 
-.header__subtitle {
-  font-family: "Oxygen";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 20px;
+.main__pretitle {
+  font: normal 400 17px/20px "Oxygen";
   color: rgba(46, 46, 46, 0.63);
 }
 
@@ -43,11 +36,7 @@
 }
 
 .main__text {
-  font-family: "Oxygen";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 35px;
+  font: normal 400 24px/35px "Oxygen";
   color: #101315;
 }
 
@@ -56,22 +45,20 @@
   background-color: rgba(35, 47, 56, 0.6);
 }
 
-.footer__item {
-  font-family: "Oxygen";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 11px;
-  line-height: 26px;
+.footer__items_link {
+  font: normal 499 11px/26px "Oxygen";
   letter-spacing: 1px;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
 }
 
-.footer__escape {
+/* .footer__escape {
   font-family: "Lora";
   font-style: normal;
   font-weight: 400;
   font-size: 26px;
   line-height: 26px;
   color: #ffffff;
-}
+} */
+
