@@ -1,0 +1,154 @@
+.header {
+  width: 1440px;
+  height: 360px;
+  background: #FFFFFF
+}
+
+.header__items {
+  list-style-type: none;
+  display: flex;
+  position: relative;
+  left: 965px;
+  top: -5px;
+}
+
+.header__items_link {
+  font: normal 400 12px/20px "Oxygen";
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: #2e2e2e;
+  text-decoration: none;
+  display: flex;
+  position: relative;
+  margin-left: 40px;
+  top: -20px;
+}
+
+.header__logo {
+  position: relative;
+  left: 250px;
+  top: 20px;
+}
+
+.main__top-block {
+  text-align: center;
+  position: relative;
+  bottom: 200px;
+}
+
+.main__title {
+  font: normal 400 50px/51px "Lora";
+  letter-spacing: 2px;
+  color: #2e2e2e;
+  position: relative;
+}
+
+.main__pretitle {
+  font: normal 400 17px/20px "Oxygen";
+  color: rgba(46, 46, 46, 0.63);
+}
+
+.main__block {
+  background: #F7F7F7;
+}
+
+.main__picture {
+  text-align: center;
+  height: 534px;
+  width: auto;
+
+  top: 360px;
+  border-radius: 3px;
+}
+
+.main__image {
+  width: 1440px;
+  height: 534px;
+}
+
+.main__text {
+  font: normal 400 24px/35px "Oxygen";
+  color: #101315;
+  margin: 140px 240px 135px 240px;
+  background: #F7F7F7;
+
+}
+
+.footer {
+  background: url(../images/footer.png);
+  height: 378px;
+  width: auto;
+  background-color: rgba(35, 47, 56, 0.6);
+}
+
+.footer__nav{
+  background: url(../images/footer_black.png);
+  Fill: Solid;
+  color: rgba(35, 47, 56, 0.6);
+  position: relative;
+  top: 160px;
+
+}
+
+.footer__logo {
+  position: relative;
+  top: 25px;
+  left: 200px;
+}
+
+.footer__items {
+  list-style-type: none;
+  display: flex;
+  position: relative;
+  left: 635px;
+  top: -5px;
+}
+
+.footer__items_link {
+  font: normal 499 11px/26px "Oxygen";
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  display: flex;
+  position: relative;
+  margin-left: 40px;
+  top: -15px;
+  left: 380px;
+}
+
+.footer__title {
+  font: normal 400 25px/30px "Oxygen";
+  position: relative;
+  left: 831px;
+  top: 41px;
+  color: #EFEFEF;
+}
+
+.footer__line {
+  position: relative;
+  left: 806px;
+  top: 28px;
+}
+
+.footer__form {
+  position: relative;
+  left: 660px;
+  top: 49px;
+}
+
+.footer__form_text {
+  width: 375px;
+  height: 50px;
+  background: #FFFFFF;
+  border-radius: 3px 0px 0px 3px;
+}
+
+.footer__form_button {
+  height: 50px;
+  width: 125px;
+  background: rgba(255, 255, 255, 0.28);
+  border-radius: 0px 3px 3px 0px;
+  font: normal 400 12px/14px "Roboto";
+  color: #F8F8F8;
+}
