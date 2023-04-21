@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Road Ahead</title>
+  <link href="../static/css/styles2.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Oxygen:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Oxygen:wght@300&family=Roboto:wght@100&display=swap">
+</head>
+<body class="main-container">
+  <div class="container">
+    {{ range .Header }}
+    <header class="header width-container">
+      <a><img class="header__logo" src="{{ .Escape }}" alt="escape-black"></a>
+      {{ range .HeaderItems }}
+      <nav>
+        <ul class="header__items">
+          <li><a href="http://localhost:3000/home" class="header__items_link">{{ .Home }}</a></li>
+          <li><a href="#" class="header__items_link">{{ .Categories }}</a></li>
+          <li><a href="#" class="header__items_link">{{ .About }}</a></li>
+          <li><a href="#" class="header__items_link">{{ .Contact }}</a></li>
+        </ul>
+      </nav>
+      {{ end  }}
+    </header>
+    {{ end }}
+  </div>
+  {{ range .MainBlock }}
+  <div class="main">
+    <div class="main__top-block width-container">
+      <h1 class="main__title">{{ .Title }}</h1>
+      <p class="main__pretitle">{{ .Pretitle }}</p>
+    </div>
+    <div class="main__block">
+      <img src="{{ .PostImage }}" class="main__picture" alt="The Road Ahead" class="main__image">
+      {{ range .Text }}
+      <p class="main__text width-container">
+        <br>{{ .FirstPar }}</br>
+        <br>{{ .SecondPar }}</br>
+        <br>{{ .ThirdPar }}</br>
+        <br>{{ .FourthPar }}</br>
+      </p>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+  <div>
+    {{ range .Footer }}
+    <footer class="footer">
+      <div class="footer-block width-container">
+        <p class="footer__title">{{ .Title }}</p>
+        <p class="footer__line"><img src="../static/images/line.png" alt=""></p>
+      </div>
+      <form class="footer__form width-container" action="#">
+        <input class="footer__form_text" type="text" placeholder="Enter your email address">
+        <input class="footer__form_button" type="submit" name="Submit" value="{{ .Form }}">
+      </form>
+      <div class="footer__nav">
+        <div class="width-container">
+        {{ range .BotBlock }}
+          <a><img class="footer__logo" src="{{ .Escape }}" alt="escape"></a>
+          {{ range .HeaderItems }}
+          <ul class="footer__items">
+            <li><a href="http://localhost:3000/home" class="footer__items_link">{{ .Home }}</a></li>
+            <li><a href="#" class="footer__items_link">{{ .Categories }}</a></li>
+            <li><a href="#" class="footer__items_link">{{ .About }}</a></li>
+            <li><a href="#" class="footer__items_link">{{ .Contact }}</a></li>
+          </ul>
+          {{ end }}
+        {{ end }}
+        </div>
+      </div>
+    </footer>
+    {{ end }}
+  </div>
+</body>
+</html>

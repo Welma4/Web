@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Главная страница</title>
+  <link rel="stylesheet" href="../static/css/styles1.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Oxygen:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Oxygen:wght@300&family=Roboto:wght@100&display=swap"
+    rel="stylesheet">
+  <style>
+    body {
+      background-color: #F7F7F7
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    {{ range .Header }}
+    <header class="header z-top width-container">
+      <a><img class="header__logo" src="{{ .Escape }}" alt="Escape"></a>
+      {{ range .HeaderItems }}
+      <nav>
+        <ul class="header__items">
+          <li><a href="http://localhost:3000/home" class="header__items_link">{{ .Home }}</a></li>
+          <li><a href="#" class="header__items_link">{{ .Categories }}</a></li>
+          <li><a href="#" class="header__items_link">{{ .About }}</a></li>
+          <li><a href="#" class="header__items_link">{{ .Contact }}</a></li>
+        </ul>
+      </nav>
+      {{ end }}
+    </header>
+    {{ end }}
+    {{ range .TopBlock }}
+    <div class="header__top-block z-top">
+      <img class="header-background" src="{{ .Background }}" alt="header">
+      <h1 class="header__top-block_title">{{ .Title }}</h1>
+      <p class="header__top-block_pretitle">
+        {{ .Pretitle }}
+      </p>
+      <button class="header__button">{{ .Button }}</button>
+    </div>
+    {{ end }}
+    {{ range .NavMenu }}
+    <div class="menu">
+      <ul class="navigation-menu width-container">
+        <li><a href="#" class="navigation-menu__link">{{ .Nature }}</a></li>
+        <li><a href="#" class="navigation-menu__link">{{ .Photography }}</a></li>
+        <li><a href="#" class="navigation-menu__link">{{ .Relaxation }}</a></li>
+        <li><a href="#" class="navigation-menu__link">{{ .Vacation }}</a></li>
+        <li><a href="#" class="navigation-menu__link">{{ .Travel }}</a></li>
+        <li><a href="#" class="navigation-menu__link">{{ .Adventure }}</a></li>
+      </ul>
+    </div>
+    {{ end }}
+    <article class="featured-posts">
+      <h2 class="featured-posts__title">{{ .FeaturedPostsTitle }}</h2>
+      <p class="featured-posts__line"><img src="{{ .FeaturedPostsLine }}" alt="upper-line"></p>
+      <div class="featured-posts__container">
+        {{ range .FeaturedPosts }}
+        <div class="featured-posts__first-post">
+          <img class="featured-posts__image" src="{{ .ImageUrl }}" alt="theroadahead">
+          <div class="z-top featured-posts__title-and-pretitle">
+            <a href="http://localhost:3000/post" class="featured-posts__first-post_link">
+              <p class="featured-posts__first_title z-top">{{ .Title }}</p>
+              <!--p тег убрать-->
+            </a>
+            <p class="featured-posts__first_pretitle">
+              {{ .Subtitle }}
+            </p>
+          </div>
+          <div class="z-top featured-posts__publisher_bar">
+            <img class="featured-posts__first-publisher" src="{{ .AuthorUrl }}" alt="Mat Vogels">
+            <p class="featured-posts__first-name">
+              {{ .Author }}
+            </p>
+            <p class="featured-posts__first-date">
+              {{ .PublishDate }}
+            </p>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </article>
+    <article class="most-recent">
+      <h2 class="most-recent__title_main">{{ .MostRecentTitle }}</h2>
+      <p class="most-recent__line"><img src="{{ .MostRecentLine }}" alt="line"></p>
+      <div class="most-recent_container width-container">
+        {{ range .MostRecent }}
+        <div class="most-recent__post">
+          <div>
+            <img src="{{ .ImageUrl }}" alt="PostImage" class="most-recent__picture">
+            <p class="most-recent__title">{{ .Title }}</p>
+            <p class="most-recent__subtitle_short">
+              {{ .Subtitle }} 
+            </p>
+          </div>
+          <img class="most-recent__post-line" src="../static/images/most-recent-line.png" alt="most-recent-line">
+          <div class="most-recent__publisher_bar">
+            <img class="most-recent__first-publisher" src="{{ .AuthorUrl }}" alt="William Wong">
+            <p class="most-recent__first-name">{{ .Author }}</p>
+            <p class="most-recent__first-date">{{ .PublishDate }}</p>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </article>
+  </div>
+  {{ range .Footer }}
+  <footer class="footer">
+    <img class="footer-background" src="{{ .Background }}" alt="footer-background">
+    <div class="footer__title-form">
+      <p class="footer__title z-top">{{ .Title }}</p>
+      <p class="footer__line z-top"><img src="{{ .Line }}" alt="line"></p>
+      <form class="footer__form z-top" action="#">
+        <input class="footer__form_text" type="text" placeholder="Enter your email address">
+        <input class="footer__form_button" type="submit" name="Submit" value="Submit">
+      </form>
+    </div>
+    <div class="footer__nav z-top">
+      {{ range .BotBlock }}
+      <div class="width-container">
+        <a><img class="footer__logo" src="{{ .Escape }}" alt="Escape"></a>
+        {{ range .HeaderItems }}
+        <div class="end-container">
+          <ul class="nav">
+            <li><a href="http://localhost:3000/home" class="nav__link">{{ .Home }}</a></li>
+            <li><a href="#" class="nav__link">{{ .Categories }}</a></li>
+            <li><a href="#" class="nav__link">{{ .About }}</a></li>
+            <li><a href="#" class="nav__link">{{ .Contact }}</a></li>
+          </ul>
+        </div>
+        {{ end }}
+      {{ end }}
+      </div>
+    </div>
+  </footer>
+  {{ end }}
+  </div>
+</body>
+</html>

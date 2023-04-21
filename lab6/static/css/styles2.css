@@ -1,0 +1,160 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.z-top{
+  z-index: 2;
+}
+
+.header {
+  width: auto;
+  height: 340px;
+  margin-bottom: -40px;
+  background-size: 100%;
+}
+
+.container{
+  background: #FFFFFF;
+}
+
+.width-container{
+  margin: 0 auto;
+  width: 960px;
+}
+
+.header__items {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: -30px;
+}
+
+.header__items_link {
+  display: flex;
+  font: normal 400 12px/1.67 "Oxygen";
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0px 20px 0 21px;
+  color: #2e2e2e;
+}
+
+.header__logo {
+  margin-top: 30px;
+}
+
+.main-container{
+  background: #F7F7F7;
+}
+
+.main__top-block {
+  text-align: center;
+  margin-top: -200px;
+}
+
+.main__title {
+  font: normal 400 50px/51px "Lora";
+  letter-spacing: 2px;
+  color: #2e2e2e;
+  margin-bottom: -30px;
+}
+
+.main__pretitle {
+  font: normal 400 17px/20px "Oxygen";
+  color: rgba(46, 46, 46, 0.63);
+  margin-top: 50px;
+  margin-bottom: 75px;
+}
+
+.main__block {
+  background: #F7F7F7;
+}
+
+.main__picture {
+  width: 100%;
+  max-height: 534px;
+  border-radius: 3px;  
+}
+
+
+.main__text {
+  font: normal 400 24px/35px "Oxygen";
+  color: #101315;
+  text-align: left;
+  margin-top: 110px;
+  margin-bottom: 135px;
+}
+
+.footer {
+  background: url(../images/footer.png) no-repeat;
+  background-size: 100%;
+  margin-top: 108px;
+  background-color: rgba(35, 47, 56, 0.6);
+}
+
+.footer__nav {
+  background: url(../images/footer_black.png);
+  display: flex;
+  Fill: Solid;
+  color: rgba(35, 47, 56, 0.6);
+  background-size: 100%;
+  margin: 90px 0 0 0;
+  height: 89px;
+}
+
+.footer__logo {
+  margin-top: 35px;
+}
+
+.footer__items {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  margin-top: -30px;
+}
+
+.footer__items_link {
+  font: normal 400 11px/26px "Oxygen";
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  margin-right: 41px;
+}
+
+.footer__title {
+  font: normal 400 25px/30px "Oxygen";
+  color: #EFEFEF;
+  text-align: center;
+  padding-top: 81px;
+}
+
+.footer__line {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.footer__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__form_text {
+  width: 375px;
+  height: 50px;
+  background: #FFFFFF;
+  border-width: 0px;
+  padding-left: 35px;
+}
+
+.footer__form_button {
+  height: 50px;
+  width: 125px;
+  background: rgba(255, 255, 255, 0.28);
+  font: normal 400 12px/14px "Roboto";
+  color: #F8F8F8;
+  border-width: 0px;
+}
